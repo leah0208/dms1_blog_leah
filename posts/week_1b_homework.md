@@ -1,13 +1,14 @@
 ---
 title: Week 1b Homework
 published_at: 2025-03-09
-snippet:  
+snippet:  In Week 1b homework blog, I analyzed Rafael's "Reflection" (2025), discussing its visual effects and technical aspects. 
 disable_html_sanitization: true
 allow_math: true
 ---
 
 ## Discussions of The Reflection (Rafael,2025)
 
+![rafael reflection1](/week1/reflection1.png)
 
 **1.what do you think is going on, under the hood?**
 
@@ -15,7 +16,7 @@ allow_math: true
 
 "It plays with the mirroring and light tricks to blur the edge of circle."
 
-"It’s trippy. Probably a mix of random colors and smart coding."
+"It's trippy. Probably a mix of random colors and smart coding."
 
 **2.what concepts would I need to understand in order to replicate this work in p5?**
 
@@ -31,6 +32,7 @@ Shapes and mirroring for reflection effect.
 
  The basic coding train on YouTube  /   p5.js reference for all the functions on Canvas Modules 
 
+![rafael reflection2](/week1/reflection2.png)
 
 
 
@@ -38,17 +40,9 @@ Shapes and mirroring for reflection effect.
 
 
 
+## p5 sketch:
 
-
-Hyperlinks -> [Link Name](https://www.markdownguide.org/cheat-sheet/)
-
-Code Line -> `createCanvas(innerWidth, innerWidth * 9 / 16);`
-
-Images in folder `static` -> ![hello kitty](example-blog/hello-kitty.gif)
-
-## Example p5 sketch:
-
-<iframe class="p5js_canvas" src="https://editor.p5js.org/johnnyliang97/full/3eKYM1aR4"></iframe>
+<iframe class="p5js_canvas" src="https://editor.p5js.org/leah0208/full/eyl4RG6au"></iframe>
 
 <script type="module">
 
@@ -62,6 +56,7 @@ if (iframes.length > 0) {
 }
 
 </script>
+
 
 ## Example video:
 
