@@ -44,7 +44,10 @@ if (iframes.length > 0) {
 
 ## Coding Reference:
 
+After learning about the let keyword and for loops, I experimented with creating a basic grid system in p5.js. 
+
 [For](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+
 [Let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 
 
@@ -62,4 +65,4 @@ if (iframes.length > 0) {
     iframe.width  = iframe.parentNode.scrollWidth
     iframe.height = iframe.width * 9 / 16
 
-</script>
+</script> 
