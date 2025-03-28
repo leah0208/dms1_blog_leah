@@ -14,29 +14,47 @@ There's nothing else on the page—just a blank background and the egg.
 
 It’s floating in space. The egg is simple, but it somehow holds the attention.
 
-
-
-**who or what is our shared challenge / adversary?**
-
-Main opponent:
-
-“Lazy Mode” all the inner forces that hold me back -- procrastination, self-doubt, and overthinking.
-
-Hidden enemies:
-
-Over-rational thinking – sometimes I rely too much on logic and ignore my gut feelings. 
-Boredom， one of the secret roots of procrastination. Bepo keeps things exciting so I don’t drift off and lose momentum yayyy.
+no sound no interaction but cute.
 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-**Expansion of 2a**
+**Feedback from a colleague**
 
-To make Bepo looks softer and more jelly-like, I learned that I can use `filter()` to add a blur effect. 
-It helps give Bepo that smooth, squishy vibe instead of looking flat.
+**1.How well did you achieve a cute aesthetic?**
+
+The jelly-like blur effect on the body gives Bepo that soft, touchable feel. Super cute. 
+Squeeze reaction, the squish when clicked adds a whole new level of charm. 
+
+**2.What could you try to increase the cuteness?**
+
+The sharp rainbow wings might not be the best fit — they look a bit out of place.
+
+Cute sound effects / The stardust 
+
+**3.How might you use implement these improvements using javascript?**
+
+Later on, try loading a .mp3 with `loadSound()` and playing it on click. 
+ 
+And add facial expression on Bepo
+
+if (isSqueezed) {
+  faceText = "(×﹏×)";
+} else {
+  faceText = "(｡•́‿•̀｡)";
+}
+text(faceText, circleX, circleY);
 
 
-<iframe class="p5js_canvas" src="https://editor.p5js.org/leah0208/full/3N_9OuMsj"></iframe>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+**Continue with previous work**
+
+
+
+
+<iframe class="p5js_canvas" src="https://editor.p5js.org/leah0208/full/Opuek0c1P"></iframe>
 
 <script type="module">
 
@@ -51,81 +69,43 @@ if (iframes.length > 0) {
 
 </script>
 
+1.I took the idea of removing the wings from my classmate. And then I added the emoji face to Bepo.
+  Instead of just being a squishy shape, it started to feel like a little creature with moods.
+
+![emoji1](/week3/emoji1.png)
+![emoji2](/week3/emoji2.png)
+
+2.I added floating stars ("☆" and "★")
+  This made movement look magical and playful.
+  It leaves sparkles behind as it moves.
+
+  At first, I used `random(["☆", "★"])` directly in the draw loop, but I realized this caused a flickering effect.
+  I fixed it by assigning each star a fixed symbol when it was created, and then just displaying that saved symbol every frame.
+
+![stardust](/week3/stardust1.png)
+
+ `starDust.push({ ... });`
+  It means-here’s a new star. Save all its info(position, size, speed, color, shape) and add it to my list of active stars so I can animate and draw it later.
+
+![stardust_push](/week3/stardust_push.png)
+
+3.I used timed animations for the squeeze effect. Instead of instantly snapping, it now reacts more naturally and slowly.
+![millis](/week3/millis.png)
+
+`squeezeTimer = millis();`
+
+This is used to track how long the squeeze has been happening,I am saving the current time (in milliseconds) 
+so you can smoothly bring Bepo back to normal shape over time.
 
 
-![blur1](/week2/blur1.png)
-
-At first, I added filter() but it didn’t work, in my original code, `filter()` was affecting the entire canvas, not just Bepo.
-
-To blur only Bepo’s body, I learned that I need to use createGraphics() to create an off-screen canvas. 
-
-Then I draw Bepo’s body on that canvas, apply the blur there, and finally display it on the main canvas. 
-
-![blur2](/week2/blur2.png)
-
-Then I had another issue with the squeeze function.
-
-Since I was drawing Bepo’s body on an off-screen buffer, but the mouse click detection was still happening on the main canvas, 
-
-the click wasn’t registering properly,it looked like I was clicking on Bepo, but nothing happened.
-
-To fix it, I updated my code so that the click detection still references Bepo’s actual position, 
-
-even if the visuals are drawn on a different layer. After that, the squeeze interaction worked again.
 
 
-
-
-
-
-
-
-## Falling Falling:
-
-
-<iframe class="p5js_canvas" src="https://editor.p5js.org/leah0208/full/rbjfBvqV-"></iframe>
-
-<script type="module">
-
-const iframes = document.querySelectorAll('.p5js_canvas');
-
-if (iframes.length > 0) {
-    iframes.forEach((iframe) => {
-        iframe.width  = iframe.parentNode.scrollWidth;
-        iframe.height = iframe.width * 9 / 16 + 42;
-    });
-}
-
-</script>
-
-**The lines of code that I'm  having trouble understanding**
-
-1. `fill(lerpColor(f.colours[0], f.colours[1], f.phase));`
-
-2. `f.phase += 0.008;`
-
-3. `if (f.phase > 1) redundant.push(i);`
-
-4. `redundant.forEach(n => fallers.splice(n, 1));`
-
-![falling1](/week2/falling1.png)
-
-
-5. `faller.curves = new Array(7).fill().map(rand_curve);`
-
-6. `fallers.push(Object.assign({}, faller));`
-
-![falling2](/week2/falling2.png)
-
-I asked ChatGPT about these coding issues, and it helped explain what was going in a way that actually made sense. 
-Then I went on YouTube to watch a few videos and look at some examples.
 
 ## Reference:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-MUOweQ6wac?si=lEX2OggQKj0IZozI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B-N-isc31Z0?si=sqO-hJSb9O36xqNm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nicMAoW6u1g?si=OF1v9nfvu6vTt3tz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UcdigVaIYAk?si=razMfw62sUaMHJTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
