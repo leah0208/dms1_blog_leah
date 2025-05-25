@@ -85,3 +85,36 @@ Dynamic Grid: Replace fixed cell sizes with noise-driven widths
 
 Let the grid "breathe" over time (`t += speedSlider.value()`).
 
+
+
+Core Coding Techniques
+This work demonstrates several foundational programming concepts in creative, layered ways:
+
+✅ Variables
+
+Used extensively to store system state (e.g. playing, t, contrast, glitchCells, lastLevel). Variables like glitchStart and glitchDuration are critical for managing timed visual effects.
+
+🔁 Iteration
+
+Nested for loops control grid layout and animation. They are used to traverse both rows and columns for rendering (draw()) and for checking states like flashing or glitching cells.
+
+🧠 Functions
+
+Modular logic is handled through functions like spreadGlitch(i, j, depth) for recursive glitch effects, mousePressed() for user interaction, and draw() as the core animation loop.
+
+🔘 Boolean Logic
+
+Boolean values (e.g. playing, glitchActive, grid[i][j]) are used to determine whether to fill a cell, trigger sound, or activate visuals. Conditionals like if (level - lastLevel > 0.1) handle beat detection based on amplitude spikes.
+
+📦 Arrays
+
+2D arrays (grid[][], beatFlash[][]) store the state of each cell. Arrays are also used for column/row sizes (colWidths, rowHeights) and for sound samples (samples[]).
+
+🧱 Classes
+
+While no custom classes are explicitly defined in this version, the system leverages object-like structures (e.g. {i, j} cell objects in glitchCells) and p5.js built-in class instances like p5.SoundFile, p5.Amplitude, and p5.Delay.
+
+🔁 Recursion
+
+The spreadGlitch() function uses recursion to propagate a visual explosion across neighboring cells. It spreads the glitch effect in expanding waves, mimicking organic or chaotic diffusion.
+
