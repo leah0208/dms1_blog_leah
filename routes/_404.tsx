@@ -1,5 +1,5 @@
 import { PageProps } from "$fresh/server.ts";
-import { Post } from "@/utils/posts.ts";
+import { Post } from "../utils/posts.ts";
 
 export default function Blog404Page(props: PageProps<Post[]>) {
   return (

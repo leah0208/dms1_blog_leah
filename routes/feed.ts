@@ -1,5 +1,5 @@
 import { Handlers } from "$fresh/server.ts";
-import { getPosts, Post } from "@/utils/posts.ts";
+import { getPosts, Post } from "../utils/posts.ts";
 import { Feed, type Item as FeedItem } from "feed";
 
 export const handler: Handlers<Post[]> = {

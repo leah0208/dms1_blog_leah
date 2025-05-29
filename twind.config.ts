@@ -1,5 +1,29 @@
-import { Options } from "$fresh/plugins/twind.ts";
+// twind.config.ts
+import { Options } from "$fresh/plugins/twindv1.ts";
+import { defineConfig } from "@twind/core"; 
+import presetAutoprefix from "@twind/preset-autoprefix"; 
+import presetTailwind from "@twind/preset-tailwind"; 
 
 export default {
   selfURL: import.meta.url,
-} as Options;
+  ...defineConfig({ 
+    presets: [
+      presetAutoprefix(), 
+      presetTailwind() as any 
+    ], 
+theme: {
+  extend: {
+    fontFamily: {
+      
+      sans: ["ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif"],
+      serif: ["ui-serif", "Georgia", "Cambria", "Times New Roman", "Times", "serif"],
+      mono: ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"],
+      
+    },
+  },
+},
+        // 如果您有其他主题扩展，可以放在这里
+        // colors: {
+        //   'brand': '#2FD0C3',
+        // },
+      } as Options)}

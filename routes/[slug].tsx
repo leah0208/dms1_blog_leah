@@ -1,6 +1,6 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { Head } from "$fresh/runtime.ts";
-import { getPost, Post } from "@/utils/posts.ts";
+import { getPost, Post } from "../utils/posts.ts";
 import { CSS, KATEX_CSS, render } from "$gfm";
 
 export const handler: Handlers<Post> = {

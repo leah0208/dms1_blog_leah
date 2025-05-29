@@ -1,6 +1,6 @@
 ---
-title: Week 7b Homewrork
-published_at: 2025-04-27
+title: Week 8a Homewrork
+published_at: 2025-05-05
 snippet: 
 disable_html_sanitization: true
 allow_math: true

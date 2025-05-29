@@ -1,5 +1,5 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
-import { getPost, getPosts, Post } from "@/utils/posts.ts";
+import { getPost, getPosts, Post } from "../utils/posts.ts";
 
 export const handler: Handlers<Post[]> = {
   async GET(_req, ctx) {
