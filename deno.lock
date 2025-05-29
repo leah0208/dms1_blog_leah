@@ -153,7 +153,6 @@
     }
   },
   "redirects": {
-    "https://esm.sh/@twind/core@^1.1.0?target=denonext": "https://esm.sh/@twind/core@1.1.3?target=denonext",
     "https://esm.sh/sax@^1.2.4?target=denonext": "https://esm.sh/sax@1.4.1?target=denonext",
     "https://esm.sh/xml-js@^1.6.11?target=denonext": "https://esm.sh/xml-js@1.6.11?target=denonext"
   },
@@ -553,15 +552,6 @@
     "https://esm.sh/@babel/helper-validator-identifier@7.22.20/denonext/helper-validator-identifier.mjs": "f765fd69eb4fd81b839b76bf60f227caac4fe4d41b4c646cc08aa7b8d948fe17",
     "https://esm.sh/@twind/core@1.1.3": "9bcaf0c427f0a27f9203aa1ac0b5db3422c6b02b53906c603c8a7ded90662e76",
     "https://esm.sh/@twind/core@1.1.3/denonext/core.mjs": "39005f461379ef3ae69a2147083b793354a0867cc6fb926052c8af29ec84d20a",
-    "https://esm.sh/@twind/core@1.1.3?target=denonext": "9bcaf0c427f0a27f9203aa1ac0b5db3422c6b02b53906c603c8a7ded90662e76",
-    "https://esm.sh/@twind/preset-tailwind@1.1.4": "d8bb39cf3b464fa91fdbf6cbf546e1ea32aba539a90e697458377b1463a0251a",
-    "https://esm.sh/@twind/preset-tailwind@1.1.4/denonext/_/colors-e5e84df2.mjs": "6d315ad5929b29404152eb60471353fa8ad7795b9ceebadc921e12dbf798d5a8",
-    "https://esm.sh/@twind/preset-tailwind@1.1.4/denonext/base.mjs": "c658e391df1964c55d81cd287c420adb6e61990de76a89a33c7606c09db06e28",
-    "https://esm.sh/@twind/preset-tailwind@1.1.4/denonext/baseTheme.mjs": "ec8a8a2aff48a6eeeefcc39054c25d8cc47639dd692e45180f5bb5c9afdf9964",
-    "https://esm.sh/@twind/preset-tailwind@1.1.4/denonext/preflight.mjs": "d4d86001c096650117e0fa35a692c47fa7aeb4043a4259600da9e1f12d2f7370",
-    "https://esm.sh/@twind/preset-tailwind@1.1.4/denonext/preset-tailwind.mjs": "f0274eb39bf5bc37a21c04176e016964e376357b1208c73c911bea4c86a48693",
-    "https://esm.sh/@twind/preset-tailwind@1.1.4/denonext/rules.mjs": "a209332fe57f2575291428ca63e40a7fbfd80ba45cf0a767e255d715ccbef0de",
-    "https://esm.sh/@twind/preset-tailwind@1.1.4/denonext/variants.mjs": "95ebfa2292b045b0ff708a4f94ae703d92773c2785c561fc7b079c340ce5d2e7",
     "https://esm.sh/feed@4.2.2": "dca62237661ed6cf5ca20d97a9138cc5727054bb5d1f741676402e7e95446acb",
     "https://esm.sh/feed@4.2.2/denonext/feed.mjs": "f61177a13d321ebe406b8c57004632d5dcb1bd366c57860e226668f41855ba12",
     "https://esm.sh/preact@10.19.2": "a54c21042d5aace76ae26ab8870375502c2fda726204221068dbc1fb385b3d4b",
