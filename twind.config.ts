@@ -11,19 +11,19 @@ export default {
       presetAutoprefix(), 
       presetTailwind() as any 
     ], 
-theme: {
-  extend: {
-    fontFamily: {
-      
-      sans: ["ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif"],
-      serif: ["ui-serif", "Georgia", "Cambria", "Times New Roman", "Times", "serif"],
-      mono: ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"],
-      
-    },
-  },
-},
-        // 如果您有其他主题扩展，可以放在这里
+    theme: {
+      extend: {
+        fontFamily: {
+     
+          sans: ["ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif"],
+          serif: ["ui-serif", "Georgia", "Cambria", "Times New Roman", "Times", "serif"],
+          mono: ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"],
+        },
+   
         // colors: {
-        //   'brand': '#2FD0C3',
+        //   'brand': '#YOUR_COLOR_CODE',
         // },
-      } as Options)}
+      },
+    },
+  }),
+} as Options;
