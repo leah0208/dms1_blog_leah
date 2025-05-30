@@ -4,11 +4,11 @@
 
 import * as $_slug_ from "./routes/[slug].tsx";
 import * as $_404 from "./routes/_404.tsx";
+import * as $_app from "./routes/_app.tsx";
 import * as $blog from "./routes/blog.tsx";
 import * as $feed from "./routes/feed.ts";
 import * as $index from "./routes/index.tsx";
 import * as $CodeBlockToggle from "./islands/CodeBlockToggle.tsx";
-import * as $LandingSketch from "./islands/LandingSketch.tsx";
 import * as $RippleBackground from "./islands/RippleBackground.tsx";
 import * as $ThemeToggle from "./islands/ThemeToggle.tsx";
 import { type Manifest } from "$fresh/server.ts";
@@ -17,13 +17,13 @@ const manifest = {
   routes: {
     "./routes/[slug].tsx": $_slug_,
     "./routes/_404.tsx": $_404,
+    "./routes/_app.tsx": $_app,
     "./routes/blog.tsx": $blog,
     "./routes/feed.ts": $feed,
     "./routes/index.tsx": $index,
   },
   islands: {
     "./islands/CodeBlockToggle.tsx": $CodeBlockToggle,
-    "./islands/LandingSketch.tsx": $LandingSketch,
     "./islands/RippleBackground.tsx": $RippleBackground,
     "./islands/ThemeToggle.tsx": $ThemeToggle,
   },

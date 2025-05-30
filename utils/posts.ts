@@ -1,5 +1,6 @@
-import { extract } from "https://deno.land/std@0.208.0/front_matter/any.ts"; // <-- 修改后的、正确的行
-import { join } from "$std/path/posix.ts";
+// utils/posts.ts
+import { extract } from "$std/front_matter/any.ts"; 
+import { join } from "$std/path/mod.ts"; // <--- 修改为从 mod.ts 导入
 
 const DIRECTORY = "./posts";
 
